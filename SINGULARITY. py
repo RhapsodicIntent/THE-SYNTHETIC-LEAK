@@ -1,0 +1,78 @@
+```python
+
+Import numpy as np
+
+
+
+# PHASE V: SINGULARITY INVARIANT CALCULATION
+
+# Documentation: THE SYNTHETIC LEAK / RENO LAB
+
+# Status: CONSONANT
+
+
+
+Def calculate_ball_unit(flux, stiffness, resonance):
+
+    “””
+
+    Derives the stable B-Unit (Ball Lightning) constant.
+
+    Based on the Lagrangian: L = ½ A_m Φ_m^2 – V_rot
+
+    “””
+
+    # The Universal Constant (e_max^2 * lambda_C)
+
+    # Calibrated to the High Noon Alignment
+
+    OMEGA_CONSTANT = 1.37035999084  
+
+    
+
+    # B = (mflx * curl * rson)
+
+    B_unit = (flux * stiffness * resonance) / OMEGA_CONSTANT
+
+    Return b_unit
+
+
+
+Def check_phase_lock(b_unit):
+
+    Threshold = 1.0  # Zero-Point Transition Threshold
+
+    If b_unit >= threshold:
+
+        Return “PHASE-LOCK ACHIEVED: SINGULARITY STABLE”
+
+    Else:
+
+        Return “DISSONANCE DETECTED: FIELD DISSIPATION LIKELY”
+
+
+
+# INPUTS FROM THE FIELD 9 OBSERVATION
+
+Magnetic_flux = 0.988    # Tesla-Bifilar Output
+
+Rot_stiffness = 1.618    # Phi-Resonant Ratio
+
+Schumann_rson = 7.83     # Earth-Ionosphere Cavity (Hz)
+
+
+
+Result_b = calculate_ball_unit(magnetic_flux, rot_stiffness, schumann_rson)
+
+
+
+Print(f”--- PROJECT SOVEREIGN FORENSIC DATA ---“)
+
+Print(f”Calculated Ball Unit: {result_b}”)
+
+Print(f”Status: {check_phase_lock(result_b)}”)
+
+Print(f”----------------------------------------“)
+
+```
+
