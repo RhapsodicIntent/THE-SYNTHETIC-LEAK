@@ -1,4 +1,4 @@
-```python
+python
 
 Import numpy as np
 
@@ -74,5 +74,4 @@ Print(f”Status: {check_phase_lock(result_b)}”)
 
 Print(f”----------------------------------------“)
 
-```
 
