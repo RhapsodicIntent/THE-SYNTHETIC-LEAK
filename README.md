@@ -3,10 +3,6 @@ THE SYNTHETIC LEAK
 
 ## 🌀 SYSTEM ACCESS: THE VISUAL FORENSICS
 
-json
-
-{
-
   "protocol": "PROJECT_SOVEREIGN",
 
   "archive": "THE_SYNTHETIC_LEAK",
@@ -16,8 +12,6 @@ json
   "status": "CONSONANT",
 
   "access_point": "./STACKS.md"
-
-}
 
 > [\!IMPORTANT]
 
