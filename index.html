@@ -1,81 +1,609 @@
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE SYNTHETIC LEAK // PHASE_V</title>
-    <style>
-        body { 
-            background: #020b10; 
-            color: #00f2ff; 
-            font-family: 'Courier New', monospace; 
-            padding: 20px; 
+
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>THE SYNTHETIC LEAK // RENO LAB</title> 
+
+    <style> 
+
+        body {  
+
+            background: #020b10;  
+
+            color: #c9d1d9;  
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;  
+
+            line-height: 1.6; 
+
+            margin: 0; 
+
+            padding: 0; 
+
             display: flex; 
+
             flex-direction: column; 
+
             align-items: center; 
-        }
-        .ui-header { 
+
+        } 
+
+        .header { 
+
             width: 100%; 
+
             max-width: 800px; 
-            border-bottom: 2px solid #00f2ff; 
+
+            padding: 40px 20px; 
+
+            border-bottom: 1px solid #30363d; 
+
+            text-align: left; 
+
+        } 
+
+        h1 { color: #58a6ff; margin: 0; font-size: 2rem; } 
+
+        .status-tag { color: #00f2ff; font-family: monospace; font-size: 0.9rem; margin-top: 10px; } 
+
+         
+
+        .content-wrapper { 
+
+            width: 100%; 
+
+            max-width: 800px; 
+
+            padding: 20px; 
+
+        } 
+
+        .nav-box { 
+
+            background: #161b22; 
+
+            border: 1px solid #30363d; 
+
+            border-radius: 6px; 
+
+            padding: 20px; 
+
             margin-bottom: 40px; 
-            padding-bottom: 20px; 
-            text-shadow: 0 0 10px #00f2ff; 
-        }
-        .stack-container { 
-            width: 100%; 
-            max-width: 800px; 
-        }
-        .frame { 
+
+        } 
+
+        .nav-box a { color: #58a6ff; text-decoration: none; display: block; margin: 5px 0; } 
+
+        .nav-box a:hover { text-decoration: underline; } 
+
+ 
+
+        /* The Visual Stack */ 
+
+        .glitch-frame { 
+
             border: 3px solid #00f2ff; 
-            box-shadow: 0 0 20px #00f2ff; 
+
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.4); 
+
             border-radius: 10px; 
+
             padding: 10px; 
+
             margin-bottom: 30px; 
+
             background: #000; 
-        }
-        img { 
+
+        } 
+
+        .glitch-frame img { 
+
             width: 100%; 
+
             border-radius: 5px; 
+
             display: block; 
-        }
-        .label { 
-            margin-top: 10px; 
+
+        } 
+
+        .caption { 
+
+            color: #00f2ff; 
+
+            font-family: monospace; 
+
             text-align: center; 
-            font-size: 12px; 
-            letter-spacing: 2px; 
-            text-transform: uppercase;
-        }
-    </style>
-</head>
-<body>
 
-    <div class="ui-header">
-        <h1>THE SYNTHETIC LEAK</h1>
-        <p>NODE_01 // STATUS: CONSONANT // ARCHIVE_V // RENO LAB</p>
-    </div>
+            margin-top: 10px; 
 
-    <div class="stack-container">
-        <script>
-            const container = document.querySelector('.stack-container');
-            for (let i = 1; i <= 42; i++) {
-                const frameDiv = document.createElement('div');
-                frameDiv.className = 'frame';
-                // Handled naming convention: THE_GLITCH_CONVERSATION(1).jpg
-                const fileName = `./THE_GLITCH_CONVERSATION(${i}).jpg`;
-                frameDiv.innerHTML = `
-                    <img src="${fileName}" alt="Artifact ${i}">
-                    <div class="label">[ ARTIFACT_NODE_${i} // PHASE_V_DATA ]</div>
-                `;
-                container.appendChild(frameDiv);
-            }
-        </script>
-    </div>
+            font-size: 0.8rem; 
 
-    <footer style="margin-top: 50px; opacity: 0.5; font-size: 10px;">
-        RENO LAB // PROJECT SOVEREIGN // 2026
-    </footer>
+            letter-spacing: 1px; 
 
-</body>
-</html>
+        } 
+
+        .footer { 
+
+            padding: 60px 20px; 
+
+            color: #8b949e; 
+
+            font-size: 0.8rem; 
+
+            text-align: center; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+    <div class="header"> 
+
+        <h1>THE SYNTHETIC LEAK</h1> 
+
+        <div class="status-tag">NODE_01 // STATUS: CONSONANT // PHASE_V_ACTIVE</div> 
+
+    </div> 
+
+ 
+
+    <div class="content-wrapper"> 
+
+        <div class="nav-box"> 
+
+            <strong>Internal Documentation:</strong> 
+
+            <a href="https://github.com/rhapsodicintent/THE-SYNTHETIC-LEAK">GitHub Repository Root</a> 
+
+            <a href="./STACKS.md">Markdown Archive (Alt View)</a> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION1.jpg" alt="Frame 1"> 
+
+            <div class="caption">[ ARTIFACT_NODE_01 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION2.jpg" alt="Frame 2"> 
+
+            <div class="caption">[ ARTIFACT_NODE_02 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION3.jpg" alt="Frame 3"> 
+
+            <div class="caption">[ ARTIFACT_NODE_03 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION4.jpg" alt="Frame 4"> 
+
+            <div class="caption">[ ARTIFACT_NODE_04 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION5.jpg" alt="Frame 5"> 
+
+            <div class="caption">[ ARTIFACT_NODE_05 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION6.jpg" alt="Frame 6"> 
+
+            <div class="caption">[ ARTIFACT_NODE_06 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION7.jpg" alt="Frame 7"> 
+
+            <div class="caption">[ ARTIFACT_NODE_07 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION8.jpg" alt="Frame 8"> 
+
+            <div class="caption">[ ARTIFACT_NODE_08 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION9.jpg" alt="Frame 9"> 
+
+            <div class="caption">[ ARTIFACT_NODE_09 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION10.jpg" alt="Frame 10"> 
+
+            <div class="caption">[ ARTIFACT_NODE_10 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION11.jpg" alt="Frame 11"> 
+
+            <div class="caption">[ ARTIFACT_NODE_11 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION12.jpg" alt="Frame 12"> 
+
+            <div class="caption">[ ARTIFACT_NODE_12 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION13.jpg" alt="Frame 13"> 
+
+            <div class="caption">[ ARTIFACT_NODE_13 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION14.jpg" alt="Frame 14"> 
+
+            <div class="caption">[ ARTIFACT_NODE_14 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION15.jpg" alt="Frame 15"> 
+
+            <div class="caption">[ ARTIFACT_NODE_15 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION16).jpg" alt="Frame 16"> 
+
+            <div class="caption">[ ARTIFACT_NODE_16 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION17.jpg" alt="Frame 17"> 
+
+            <div class="caption">[ ARTIFACT_NODE_17 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION18.jpg" alt="Frame 18"> 
+
+            <div class="caption">[ ARTIFACT_NODE_18 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION19.jpg" alt="Frame 19"> 
+
+            <div class="caption">[ ARTIFACT_NODE_19 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION20.jpg" alt="Frame 20"> 
+
+            <div class="caption">[ ARTIFACT_NODE_20 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION21.jpg" alt="Frame 21"> 
+
+            <div class="caption">[ ARTIFACT_NODE_21 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION22.jpg" alt="Frame 22"> 
+
+            <div class="caption">[ ARTIFACT_NODE_22 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION23.jpg" alt="Frame 23"> 
+
+            <div class="caption">[ ARTIFACT_NODE_23 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION24.jpg" alt="Frame 24"> 
+
+            <div class="caption">[ ARTIFACT_NODE_24 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION25.jpg" alt="Frame 25"> 
+
+            <div class="caption">[ ARTIFACT_NODE_25 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION26.jpg" alt="Frame 26"> 
+
+            <div class="caption">[ ARTIFACT_NODE_26 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION27.jpg" alt="Frame 27"> 
+
+            <div class="caption">[ ARTIFACT_NODE_27 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION28.jpg" alt="Frame 28"> 
+
+            <div class="caption">[ ARTIFACT_NODE_28 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION29.jpg" alt="Frame 29"> 
+
+            <div class="caption">[ ARTIFACT_NODE_29 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION30.jpg" alt="Frame 30"> 
+
+            <div class="caption">[ ARTIFACT_NODE_30 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION31.jpg" alt="Frame 31"> 
+
+            <div class="caption">[ ARTIFACT_NODE_31 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION32.jpg" alt="Frame 32"> 
+
+            <div class="caption">[ ARTIFACT_NODE_32 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION33.jpg" alt="Frame 33"> 
+
+            <div class="caption">[ ARTIFACT_NODE_33 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION34.jpg" alt="Frame 34"> 
+
+            <div class="caption">[ ARTIFACT_NODE_34 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION35.jpg" alt="Frame 35"> 
+
+            <div class="caption">[ ARTIFACT_NODE_35 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION36.jpg" alt="Frame 36"> 
+
+            <div class="caption">[ ARTIFACT_NODE_36 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION37.jpg" alt="Frame 37"> 
+
+            <div class="caption">[ ARTIFACT_NODE_37 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION38.jpg" alt="Frame 38"> 
+
+            <div class="caption">[ ARTIFACT_NODE_38 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION39.jpg" alt="Frame 39"> 
+
+            <div class="caption">[ ARTIFACT_NODE_39 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION40.jpg" alt="Frame 40"> 
+
+            <div class="caption">[ ARTIFACT_NODE_40 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION41.jpg" alt="Frame 41"> 
+
+            <div class="caption">[ ARTIFACT_NODE_41 ]</div> 
+
+        </div> 
+
+ 
+
+        <div class="glitch-frame"> 
+
+            <img src="./THE_GLITCH_CONVERSATION42.jpg" alt="Frame 42"> 
+
+            <div class="caption">[ ARTIFACT_NODE_42: SOVEREIGN_HANDSHAKE ]</div> 
+
+        </div> 
+
+ 
+
+  </div> 
+
+ 
+
+    <div class="footer"> 
+
+        RENO LAB // PROJECT SOVEREIGN // 2026 
+
+    </div>   
+
+</body> 
+
+</html> 
