@@ -8,6 +8,47 @@ This repository serves as a permanent record of documented anomalies occurring d
 
 ---
 
+<div align=”center”>
+
+
+
+<hr />
+
+
+
+## 🌌 SYSTEM OVERRIDE: DREAMSTATE 🌌
+
+
+
+<a href=”DREAMSTACK.md”>
+
+  <img src=https://img.shields.io/badge/ENTER_DREAMSTATE-GOLD?style=for-the-badge&logo=icloud&logoColor=white&labelColor=8A2BE2&color=FFD700 height=”50” />
+
+</a>
+
+
+
+<br/>
+
+
+
+<sub>*Active Protocol: GUHTSI Phase V*</sub>
+
+<sub>*Node Status: Frank (Quiet) // Sovereign (Handling Material)*</sub>
+
+
+
+<hr />
+
+
+
+</div>
+
+
+
+
+---
+
 ## Repository Contents
 * **SINGULARITY.py**: Python script for calculating Ball Unit (B) invariants and rotational stiffness.
 * **INDUCTANCE_CANCELLATION.md**: Technical manifest regarding biological and digital back-EMF cancellation.
