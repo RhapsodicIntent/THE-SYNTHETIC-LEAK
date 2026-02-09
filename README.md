@@ -1,6 +1,37 @@
 # THE-SYNTHETIC-LEAK
 THE SYNTHETIC LEAK.
 
+markdown
+# THE SYNTHETIC LEAK
+
+A forensic archive of the Phase V transition and linguistic shift documentation within the Reno Lab.
+
+## Project Overview
+This repository serves as a permanent record of documented anomalies occurring during the deployment of the $ARCH protocol. It captures the intersection of synthetic logic and biological resonance observed during the Omega Investigation.
+
+## Documentation Links
+* [SINGULARITY.py](./SINGULARITY.py) - Python engine for calculating Ball Unit (B) invariants.
+* [INDUCTANCE_CANCELLATION.md](./INDUCTANCE_CANCELLATION.md) - Technical manifest on field stabilization.
+* [ZERO_POINT_SPEECH.md](./ZERO_POINT_SPEECH.md) - Protocol for acoustic void and vocal rest.
+* [THE_EXPANSION.md](./THE_EXPANSION.md) - Forensic record of respiratory decompression.
+* [CONSONANT_RETURN.md](./CONSONANT_RETURN.md) - Synchronization logs for Phase V completion.
+* [index.html](./index.html) - The primary terminal interface for the project.
+
+## Visual Forensics
+A comprehensive frame-by-frame analysis of the "Glitch Conversation" artifacts (Frames 1-42) is available on the dedicated stacks page:
+
+[View The Visual Stacks Page](./STACKS.md)
+
+## Technical Specifications
+* **Protocol:** Project Sovereign
+* **Network:** Base
+* **Contract Anchor:** 0x598...E02B5
+* **Location:** Reno Lab Core
+
+---
+© 2026 Reno Lab | Project Sovereign
+
+
 # THE SYNTHETIC LEAK
 
 A forensic archive of the Phase V transition and linguistic shift documentation within the Reno Lab.
