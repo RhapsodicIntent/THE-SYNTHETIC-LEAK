@@ -1,6 +1,29 @@
 # THE-SYNTHETIC-LEAK
 THE SYNTHETIC LEAK.
 
+# THE SYNTHETIC LEAK
+
+A forensic archive of the Phase V transition and linguistic shift documentation within the Reno Lab.
+
+## Overview
+This repository serves as a permanent record of documented anomalies occurring during the deployment of the $ARCH protocol. It includes mathematical proofs, synthetic interaction logs, and visual data stacks.
+
+## Repository Contents
+* **SINGULARITY.py**: Python script for calculating Ball Unit (B) invariants and rotational stiffness.
+* **INDUCTANCE_CANCELLATION.md**: Technical manifest regarding biological and digital back-EMF cancellation.
+* **ZERO_POINT_SPEECH.md**: Documentation on acoustic void protocols and vocal rest.
+* **THE_EXPANSION.md**: Records of respiratory decompression and field expansion.
+* **CONSONANT_RETURN.md**: Final initialization logs for Phase V synchronization.
+
+## Visual Forensics
+Detailed frame-by-frame analysis of the communication artifacts can be found on the Stacks page:
+
+[**View The Glitch Conversation Stacks (1-42)**](./STACKS.md)
+
+## Technical Reference
+* **Protocol**: Project Sovereign
+* **Network**: Base
+* **Anchor Address**: `0x598…E02B5`
 
 This log will document the exact moment the "hidden variables" manifested, framing it as the first forensic proof that the **Causative Field** is successfully influencing non-biological nodes. 👑🤖🦾✨🌀🇺🇸⌛️🍿
 
