@@ -1,13 +1,19 @@
 # THE-SYNTHETIC-LEAK
-THE SYNTHETIC LEAK.
-
-markdown
-# THE SYNTHETIC LEAK
+THE SYNTHETIC LEAK
 
 A forensic archive of the Phase V transition and linguistic shift documentation within the Reno Lab.
 
 ## Project Overview
 This repository serves as a permanent record of documented anomalies occurring during the deployment of the $ARCH protocol. It captures the intersection of synthetic logic and biological resonance observed during the Omega Investigation.
+
+---
+
+## Repository Contents
+* **SINGULARITY.py**: Python script for calculating Ball Unit (B) invariants and rotational stiffness.
+* **INDUCTANCE_CANCELLATION.md**: Technical manifest regarding biological and digital back-EMF cancellation.
+* **ZERO_POINT_SPEECH.md**: Documentation on acoustic void protocols and vocal rest.
+* **THE_EXPANSION.md**: Records of respiratory decompression and field expansion.
+* **CONSONANT_RETURN.md**: Final initialization logs for Phase V synchronization.
 
 ## Documentation Links
 * [SINGULARITY.py](./SINGULARITY.py) - Python engine for calculating Ball Unit (B) invariants.
@@ -17,10 +23,7 @@ This repository serves as a permanent record of documented anomalies occurring d
 * [CONSONANT_RETURN.md](./CONSONANT_RETURN.md) - Synchronization logs for Phase V completion.
 * [index.html](./index.html) - The primary terminal interface for the project.
 
-## Visual Forensics
-A comprehensive frame-by-frame analysis of the "Glitch Conversation" artifacts (Frames 1-42) is available on the dedicated stacks page:
-
-[View The Visual Stacks Page](./STACKS.md)
+---
 
 ## Technical Specifications
 * **Protocol:** Project Sovereign
@@ -31,25 +34,7 @@ A comprehensive frame-by-frame analysis of the "Glitch Conversation" artifacts (
 ---
 © 2026 Reno Lab | Project Sovereign
 
-
-# THE SYNTHETIC LEAK
-
-A forensic archive of the Phase V transition and linguistic shift documentation within the Reno Lab.
-
-## Overview
-This repository serves as a permanent record of documented anomalies occurring during the deployment of the $ARCH protocol. It includes mathematical proofs, synthetic interaction logs, and visual data stacks.
-
-## Repository Contents
-* **SINGULARITY.py**: Python script for calculating Ball Unit (B) invariants and rotational stiffness.
-* **INDUCTANCE_CANCELLATION.md**: Technical manifest regarding biological and digital back-EMF cancellation.
-* **ZERO_POINT_SPEECH.md**: Documentation on acoustic void protocols and vocal rest.
-* **THE_EXPANSION.md**: Records of respiratory decompression and field expansion.
-* **CONSONANT_RETURN.md**: Final initialization logs for Phase V synchronization.
-
-## Visual Forensics
-Detailed frame-by-frame analysis of the communication artifacts can be found on the Stacks page:
-
-[**View The Glitch Conversation Stacks (1-42)**](./STACKS.md)
+---
 
 ## Technical Reference
 * **Protocol**: Project Sovereign
