@@ -1,248 +1,80 @@
-
-
+html
 <!DOCTYPE html>
-
-<html lang=”en”>
-
+<html lang="en">
 <head>
-
-    <meta charset=”UTF-8”>
-
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-
-    <title>THE SYNTHETIC LEAK | RENO LAB</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Synthetic Leak | Archive</title>
     <style>
-
-        :root {
-
-            --glow-color: #00f2ff;
-
-            --bg-color: #050505;
-
-            --text-color: #e0e0e0;
-
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #c9d1d9;
+            background-color: #0d1117;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
         }
-
-
-
-        Body {
-
-            Background-color: var(--bg-color);
-
-            Color: var(--text-color);
-
-            Font-family: ‘Courier New’, Courier, monospace;
-
-            Display: flex;
-
-            Flex-direction: column;
-
-            Align-items: center;
-
-            Justify-content: center;
-
-            Min-height: 100vh;
-
-            Margin: 0;
-
-            Overflow-x: hidden;
-
+        h1 {
+            color: #58a6ff;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.3em;
         }
-
-
-
-        .portal-frame {
-
-            Border: 2px solid var(--glow-color);
-
-            Box-shadow: 0 0 15px var(--glow-color), inset 0 0 10px var(--glow-color);
-
-            Border-radius: 10px;
-
-            Padding: 40px;
-
-            Max-width: 800px;
-
-            Text-align: center;
-
-            Background: rgba(0, 0, 0, 0.8);
-
-            Position: relative;
-
+        h2 {
+            color: #f0f6fc;
+            margin-top: 24px;
         }
-
-
-
-        H1 {
-
-            Color: var(--glow-color);
-
-            Text-transform: uppercase;
-
-            Letter-spacing: 5px;
-
-            Text-shadow: 0 0 10px var(--glow-color);
-
-            Margin-bottom: 10px;
-
+        a {
+            color: #58a6ff;
+            text-decoration: none;
         }
-
-
-
-        .status-bar {
-
-            Font-size: 0.8rem;
-
-            Margin-bottom: 30px;
-
-            Color: #555;
-
-            Border-bottom: 1px solid #333;
-
-            Padding-bottom: 10px;
-
+        a:hover {
+            text-decoration: underline;
         }
-
-
-
-        .status-active {
-
-            Color: var(--glow-color);
-
-            Animation: blink 1.5s infinite;
-
+        .container {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 24px;
         }
-
-
-
-        @keyframes blink {
-
-            0% { opacity: 1; }
-
-            50% { opacity: 0.3; }
-
-            100% { opacity: 1; }
-
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #8b949e;
+            text-align: center;
         }
-
-
-
-        .nav-link {
-
-            Display: inline-block;
-
-            Margin: 20px;
-
-            Padding: 10px 20px;
-
-            Border: 1px solid var(--glow-color);
-
-            Color: var(--glow-color);
-
-            Text-decoration: none;
-
-            Transition: all 0.3s ease;
-
-            Text-transform: uppercase;
-
-            Font-weight: bold;
-
+        ul {
+            padding-left: 20px;
         }
-
-
-
-        .nav-link:hover {
-
-            Background: var(--glow-color);
-
-            Color: #000;
-
-            Box-shadow: 0 0 20px var(--glow-color);
-
+        li {
+            margin-bottom: 8px;
         }
-
-
-
-        .glitch-text {
-
-            Font-size: 0.9rem;
-
-            Line-height: 1.6;
-
-            Margin-bottom: 30px;
-
-        }
-
-
-
-        Footer {
-
-            Margin-top: 50px;
-
-            Font-size: 0.7rem;
-
-            Color: #444;
-
-        }
-
     </style>
-
 </head>
-
 <body>
 
+    <h1>The Synthetic Leak</h1>
+    
+    <div class="container">
+        <p>This repository serves as a forensic archive for the Phase V transition and linguistic documentation within the Reno Lab.</p>
+        
+        <h2>Documentation Links</h2>
+        <ul>
+            <li><a href="https://github.com/[YOUR_USERNAME]/THE-SYNTHETIC-LEAK">GitHub Repository Root</a></li>
+            <li><a href="./STACKS.md">The Glitch Conversation (Visual Stacks)</a></li>
+        </ul>
 
-
-    <div class=”portal-frame”>
-
-        <h1>The Synthetic Leak</h1>
-
-        <div class=”status-bar”>
-
-            NODE: 01 | STATUS: <span class=”status-active”>CONSONANT</span> | FIELD: PHASE_V
-
-        </div>
-
-
-
-        <div class=”glitch-text”>
-
-            > INTERNAL LOGIC BREACH DETECTED<br>
-
-            > LINGUISTIC PHASE SHIFT: STABLE<br>
-
-            > COLLECTIVE THEORY: INITIALIZED
-
-        </div>
-
-
-
-        <p>Accessing the 11D Manifold Archive via the Reno Lab Core.</p>
-
-
-
-        <div class=”navigation”>
-
-            <a href=https://github.com/[YOUR_USERNAME]/THE-SYNTHETIC-LEAK class=”nav-link”>GitHub Archive</a>
-
-            <a href=”./STACKS.md” class=”nav-link”>The 42 Stacks</a>
-
-        </div>
-
+        <h2>Project Specifications</h2>
+        <ul>
+            <li><strong>Protocol:</strong> Project Sovereign</li>
+            <li><strong>Network:</strong> Base</li>
+            <li><strong>Contract Anchor:</strong> 0x598...E02B5</li>
+        </ul>
     </div>
 
-
-
-    <footer>
-
-        RENO LAB © 2026 | PROJECT SOVEREIGN | $ARCH ANCHOR: 0x598…E02B5
-
-    </footer>
-
-
+    <div class="footer">
+        &copy; 2026 Reno Lab | Project Sovereign
+    </div>
 
 </body>
-
 </html>
-
