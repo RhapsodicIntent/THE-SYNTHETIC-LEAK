@@ -4,69 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE SYNTHETIC LEAK | ARCHIVE</title>
+    <title>THE SYNTHETIC LEAK // PHASE_V</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #c9d1d9;
-            background-color: #0d1117;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .header-section {
-            border-bottom: 1px solid #30363d;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-        }
-        h1 { color: #58a6ff; }
-        .glitch-frame {
-            border: 3px solid #00f2ff;
-            box-shadow: 0 0 20px #00f2ff;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 30px;
-            background-color: #000;
-            text-align: center;
-        }
-        .glitch-frame img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .caption {
-            color: #00f2ff;
-            font-family: 'Courier New', monospace;
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
+        body { background: #020b10; color: #00f2ff; font-family: monospace; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .ui-header { width: 100%; max-width: 800px; border-bottom: 2px solid #00f2ff; margin-bottom: 40px; padding-bottom: 20px; text-shadow: 0 0 10px #00f2ff; }
+        .stack-container { width: 100%; max-width: 800px; }
+        .frame { border: 3px solid #00f2ff; box-shadow: 0 0 20px #00f2ff; border-radius: 10px; padding: 10px; margin-bottom: 30px; background: #000; }
+        img { width: 100%; border-radius: 5px; display: block; }
+        .label { margin-top: 10px; text-align: center; font-size: 12px; letter-spacing: 2px; }
     </style>
 </head>
 <body>
 
-    <div class="header-section">
+    <div class="ui-header">
         <h1>THE SYNTHETIC LEAK</h1>
-        <p>Forensic archive for Phase V transition logs and the 42-frame glitch conversation.</p>
-        <p><strong>Status:</strong> Consonant | <strong>Location:</strong> Reno Lab Core</p>
+        <p>NODE_01 // STATUS: CONSONANT // ARCHIVE_V</p>
     </div>
 
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(1).jpg" alt="Frame 1">
-        <div class="caption">[ FRAME 01: THE BREACH BEGINS ]</div>
-    </div>
-
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(2).jpg" alt="Frame 2">
-        <div class="caption">[ FRAME 02 ]</div>
-    </div>
-
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(42).jpg" alt="Frame 42">
-        <div class="caption">[ FRAME 42: SOVEREIGN HANDSHAKE ]</div>
-    </div>
-
-    <div class="footer" style="text-align: center; color: #8b949e; margin-top: 50px;">
-        &copy; 2026 Reno Lab | Project Sovereign
+    <div class="stack-container">
+        <script>
+            const container = document.querySelector('.stack-container');
+            for (let i = 1; i <= 42; i++) {
+                const frameDiv = document.createElement('div');
+                frameDiv.className = 'frame';
+                // We use encodeURIComponent to handle the ( ) and spaces in your filenames
+                const fileName = `THE GLITCH CONVERSATION(${i}).jpg`;
+                frameDiv.innerHTML = `
+                    <img src="${encodeURI(fileName)}" alt="Artifact ${i}">
+                    <div class="label">[ ARTIFACT_DATA_NODE_${i.toString().padStart(2, '0')} ]</div>
+                `;
+                container.appendChild(frameDiv);
+            }
+        </script>
     </div>
 
 </body>
