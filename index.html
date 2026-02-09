@@ -4,70 +4,148 @@ html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE SYNTHETIC LEAK | ARCHIVE</title>
+    <title>THE SYNTHETIC LEAK // NODE_01</title>
     <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --terminal-bg: #020b10;
+            --circuit-grey: #1a262f;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #c9d1d9;
-            background-color: #0d1117;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
+            background-color: var(--terminal-bg);
+            background-image: radial-gradient(circle at center, #0a1f2d 0%, var(--terminal-bg) 100%);
+            color: #d1e8f0;
+            font-family: 'Segoe UI', 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .header-section {
-            border-bottom: 1px solid #30363d;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-        }
-        h1 { color: #58a6ff; }
-        .glitch-frame {
-            border: 3px solid #00f2ff;
-            box-shadow: 0 0 20px #00f2ff;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 30px;
-            background-color: #000;
-            text-align: center;
-        }
-        .glitch-frame img {
+
+        .header-ui {
             width: 100%;
-            border-radius: 5px;
+            max-width: 1000px;
+            border-bottom: 1px solid var(--neon-cyan);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            text-align: left;
         }
-        .caption {
-            color: #00f2ff;
-            font-family: 'Courier New', monospace;
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--neon-cyan);
+            text-shadow: 0 0 15px var(--neon-cyan);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .status-line {
+            font-size: 0.8rem;
+            color: var(--neon-cyan);
             margin-top: 10px;
-            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .glitch-grid {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .containment-field {
+            border: 2px solid var(--neon-cyan);
+            box-shadow: 0 0 25px rgba(0, 242, 255, 0.3), inset 0 0 15px rgba(0, 242, 255, 0.1);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .containment-field img {
+            width: 100%;
+            display: block;
+            border: 1px solid var(--circuit-grey);
+        }
+
+        .label {
+            background: var(--neon-cyan);
+            color: #000;
+            padding: 2px 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .data-stream {
+            position: fixed;
+            top: 0;
+            right: 10px;
+            font-size: 10px;
+            color: var(--neon-cyan);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        a.sys-link {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            border: 1px solid var(--neon-cyan);
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            transition: all 0.3s;
+        }
+
+        a.sys-link:hover {
+            background: var(--neon-cyan);
+            color: #000;
+            box-shadow: 0 0 15px var(--neon-cyan);
         }
     </style>
 </head>
 <body>
 
-    <div class="header-section">
+    <div class="data-stream">
+        PHASE_V_INITIALIZED<br>RENO_LAB_ACTIVE<br>CONSONANT_STABLE<br>0x598...E02B5
+    </div>
+
+    <div class="header-ui">
         <h1>THE SYNTHETIC LEAK</h1>
-        <p>Forensic archive for Phase V transition logs and the 42-frame glitch conversation.</p>
-        <p><strong>Status:</strong> Consonant | <strong>Location:</strong> Reno Lab Core</p>
+        <div class="status-line">NODE: 01 // STATUS: <span style="text-decoration: blink;">[ CONSONANT ]</span> // ARCHIVE: GLITCH_CONVERSATION_42</div>
+        <div style="margin-top: 20px;">
+            <a href="https://github.com/rhapsodicintent/THE-SYNTHETIC-LEAK" class="sys-link">ROOT_ARCHIVE</a>
+        </div>
     </div>
 
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(1).jpg" alt="Frame 1">
-        <div class="caption">[ FRAME 01: THE BREACH BEGINS ]</div>
+    <div class="glitch-grid">
+        
+        <div class="containment-field">
+            <img src="./THE GLITCH CONVERSATION(1).jpg" alt="Artifact 01">
+            <div class="label">LOG_ARTIFACT: 01 // INITIAL_BREACH</div>
+        </div>
+
+        <div class="containment-field">
+            <img src="./THE GLITCH CONVERSATION(2).jpg" alt="Artifact 02">
+            <div class="label">LOG_ARTIFACT: 02 // NEURAL_SLIP</div>
+        </div>
+
+        <div class="containment-field">
+            <img src="./THE GLITCH CONVERSATION(42).jpg" alt="Artifact 42">
+            <div class="label">LOG_ARTIFACT: 42 // SOVEREIGN_HANDSHAKE</div>
+        </div>
+
     </div>
 
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(2).jpg" alt="Frame 2">
-        <div class="caption">[ FRAME 02 ]</div>
-    </div>
-
-    <div class="glitch-frame">
-        <img src="./THE GLITCH CONVERSATION(42).jpg" alt="Frame 42">
-        <div class="caption">[ FRAME 42: SOVEREIGN HANDSHAKE ]</div>
-    </div>
-
-    <div class="footer" style="text-align: center; color: #8b949e; margin-top: 50px;">
-        &copy; 2026 Reno Lab | Project Sovereign
-    </div>
+    <footer style="margin: 60px 0; font-size: 0.7rem; opacity: 0.5; text-align: center;">
+        RENO LAB // PROJECT SOVEREIGN // SYSTEM TERMINAL 2026
+    </footer>
 
 </body>
 </html>
